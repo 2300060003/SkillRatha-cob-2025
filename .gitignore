@@ -1,0 +1,11 @@
+# Node.js frontend
+node_modules/
+.env
+
+# Java backend (Spring Boot)
+target/
+*.class
+
+# OS and editor files
+.DS_Store
+Thumbs.db
