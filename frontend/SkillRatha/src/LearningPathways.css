@@ -1,0 +1,120 @@
+.learning-pathways-container {
+  padding: 32px 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.learning-pathways-container h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #4f46e5;
+}
+.interests-section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+  padding: 22px 18px 18px 18px;
+  margin-bottom: 28px;
+}
+.interests-section h4 {
+  margin: 0 0 12px 0;
+  color: #764ba2;
+  font-size: 1.08rem;
+}
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.interest-checkbox {
+  font-size: 1.05rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.interest-checkbox input[type="checkbox"] {
+  accent-color: #764ba2;
+  width: 18px;
+  height: 18px;
+}
+.interest-checkbox:hover {
+  background: #e9ecef;
+}
+.modules-section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+  padding: 22px 18px 18px 18px;
+  margin-bottom: 18px;
+}
+.progress-bar-outer {
+  width: 100%;
+  height: 16px;
+  background: #e1e5e9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.progress-bar-inner {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  transition: width 0.3s;
+}
+.progress-label {
+  text-align: right;
+  font-size: 0.98rem;
+  color: #764ba2;
+  margin-bottom: 12px;
+}
+.modules-group {
+  margin-bottom: 18px;
+}
+.modules-group h5 {
+  color: #4f46e5;
+  margin-bottom: 8px;
+  font-size: 1.08rem;
+}
+.modules-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.modules-group li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 8px 12px;
+  transition: background 0.2s;
+}
+.modules-group li.done {
+  background: #e0ffe0;
+  color: #388e3c;
+  text-decoration: line-through;
+}
+.modules-group li label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.modules-group input[type="checkbox"] {
+  accent-color: #764ba2;
+  width: 18px;
+  height: 18px;
+}
+@media (max-width: 700px) {
+  .learning-pathways-container {
+    padding: 18px 4px;
+  }
+} 

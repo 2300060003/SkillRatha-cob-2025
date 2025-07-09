@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Hero.css';
 import Login from './Login';
 
-export default function Hero() {
+export default function Hero({ onLogin, onRegister, loginError, setLoginError }) {
   const [showLogin, setShowLogin] = useState(false);
 
   const handleGetStarted = () => {
@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
       </section>
       
-      {showLogin && <Login onClose={handleCloseLogin} />}
+      {showLogin && <Login onClose={handleCloseLogin} onLogin={onLogin} onRegister={onRegister} loginError={loginError} setLoginError={setLoginError} />}
     </>
   );
 }

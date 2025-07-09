@@ -1,0 +1,108 @@
+.skill-assessments-container {
+  padding: 32px 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.skill-assessments-container h2 {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #4f46e5;
+}
+.quiz-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+  padding: 22px 18px 18px 18px;
+  margin-bottom: 28px;
+}
+.quiz-question-block {
+  margin-bottom: 18px;
+}
+.quiz-question {
+  font-weight: 600;
+  color: #764ba2;
+  margin-bottom: 8px;
+}
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.quiz-option {
+  font-size: 1.05rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.quiz-option input[type="radio"] {
+  accent-color: #764ba2;
+  width: 18px;
+  height: 18px;
+}
+.quiz-option:hover {
+  background: #e9ecef;
+}
+.quiz-submit-btn, .quiz-retake-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 18px;
+  transition: background 0.2s;
+}
+.quiz-submit-btn:hover, .quiz-retake-btn:hover {
+  background: #4f46e5;
+}
+.quiz-result-block {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+  padding: 22px 18px 18px 18px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+.quiz-result-block h3 {
+  color: #388e3c;
+  margin-bottom: 18px;
+}
+.quiz-history-block {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+  padding: 18px 14px 14px 14px;
+  margin-bottom: 18px;
+}
+.quiz-history-block h4 {
+  color: #764ba2;
+  margin-bottom: 10px;
+}
+.quiz-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+.quiz-history-table th, .quiz-history-table td {
+  border: 1px solid #e1e5e9;
+  padding: 8px 10px;
+  text-align: center;
+}
+.quiz-history-table th {
+  background: #f8f9fa;
+  color: #4f46e5;
+}
+@media (max-width: 700px) {
+  .skill-assessments-container {
+    padding: 18px 4px;
+  }
+} 

@@ -1,0 +1,229 @@
+.resume-builder-container {
+  padding: 32px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.resume-builder-container h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #4f46e5;
+}
+.resume-builder-flex {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.resume-form {
+  flex: 1 1 350px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(102, 126, 234, 0.08);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 320px;
+  max-width: 420px;
+}
+.resume-form label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.resume-form input {
+  padding: 10px 12px;
+  border: 1.5px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  background: #f8f9fa;
+  color: #222;
+  transition: border 0.2s;
+}
+.resume-form input:focus {
+  border-color: #764ba2;
+  outline: none;
+  background: #fff;
+}
+.resume-section-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+.resume-section-group input {
+  flex: 1;
+}
+.resume-section-group button {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  height: 36px;
+  margin-left: 4px;
+  transition: background 0.2s;
+}
+.resume-section-group button:hover {
+  background: #b71c1c;
+}
+.resume-form section {
+  margin-bottom: 18px;
+}
+.resume-form h4 {
+  margin: 10px 0 8px 0;
+  color: #764ba2;
+  font-size: 1.08rem;
+}
+.resume-form button[type="button"] {
+  background: #667eea;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.98rem;
+  margin-top: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.resume-form button[type="button"]:hover {
+  background: #4f46e5;
+}
+.resume-preview-section {
+  flex: 1 1 350px;
+  background: #f8f9fa;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(102, 126, 234, 0.08);
+  padding: 28px 24px;
+  min-width: 320px;
+  max-width: 420px;
+}
+.resume-preview-section h3 {
+  text-align: center;
+  color: #4f46e5;
+  margin-bottom: 18px;
+}
+.resume-preview {
+  background: #fdfcf7;
+  border-radius: 8px;
+  padding: 32px 32px 32px 32px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 16px rgba(60, 60, 60, 0.13), 0 0 0 1.5px #e1e5e9;
+  border: 1.5px solid #e1e5e9;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  min-height: 600px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeSlideUp 0.7s cubic-bezier(.4,1.4,.6,1) both;
+}
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.resume-preview h2 {
+  margin: 0 0 6px 0;
+  color: #222;
+  font-size: 2.1rem;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.resume-preview p {
+  margin: 0 0 10px 0;
+  color: #444;
+  font-size: 1.08rem;
+  font-family: inherit;
+}
+.resume-preview h4 {
+  margin: 18px 0 6px 0;
+  color: #764ba2;
+  font-size: 1.09rem;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.resume-preview ul {
+  margin: 0 0 8px 18px;
+  padding: 0;
+}
+.resume-preview li {
+  margin-bottom: 4px;
+  color: #222;
+  font-size: 1.01rem;
+  font-family: inherit;
+}
+.download-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.download-btn:hover {
+  background: #4f46e5;
+}
+.resume-form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.section-reset-btn {
+  background: #ffe082;
+  color: #764ba2;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.section-reset-btn:hover {
+  background: #ffd54f;
+  color: #b388ff;
+}
+.overall-reset-btn {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 18px;
+  transition: background 0.2s;
+}
+.overall-reset-btn:hover {
+  background: #b71c1c;
+}
+@media (max-width: 900px) {
+  .resume-builder-flex {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .resume-form, .resume-preview-section {
+    max-width: 100%;
+    min-width: unset;
+  }
+} 

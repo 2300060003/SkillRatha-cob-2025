@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Navbar.css';
 import Login from './Login';
 
-export default function Navbar() {
+export default function Navbar({ onLogin, onRegister, loginError, setLoginError }) {
   const [showLogin, setShowLogin] = useState(false);
 
   const handleLogin = () => {
@@ -24,7 +24,7 @@ export default function Navbar() {
         </div>
       </nav>
       
-      {showLogin && <Login onClose={handleCloseLogin} />}
+      {showLogin && <Login onClose={handleCloseLogin} onLogin={onLogin} onRegister={onRegister} loginError={loginError} setLoginError={setLoginError} />}
     </>
   );
 }

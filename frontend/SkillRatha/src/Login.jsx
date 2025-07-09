@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Login.css';
 
-export default function Login({ onClose }) {
+export default function Login({ onClose, onLogin, onRegister, loginError, setLoginError }) {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
     email: '',
@@ -16,20 +16,32 @@ export default function Login({ onClose }) {
       ...prev,
       [name]: value
     }));
+    setLoginError && setLoginError('');
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoginError && setLoginError('');
     if (isLogin) {
-      // Handle login logic
-      console.log('Login:', { email: formData.email, password: formData.password });
+      const success = onLogin(formData.email, formData.password);
+      if (success) {
+        onClose();
+      }
     } else {
-      // Handle register logic
       if (formData.password !== formData.confirmPassword) {
-        alert('Passwords do not match!');
+        setLoginError && setLoginError('Passwords do not match!');
         return;
       }
-      console.log('Register:', formData);
+      const userData = {
+        email: formData.email,
+        name: formData.name,
+        password: formData.password,
+        id: Date.now()
+      };
+      const success = onRegister(userData);
+      if (success) {
+        onClose();
+      }
     }
   };
 
@@ -41,6 +53,7 @@ export default function Login({ onClose }) {
       confirmPassword: '',
       name: ''
     });
+    setLoginError && setLoginError('');
   };
 
   return (
@@ -107,6 +120,12 @@ export default function Login({ onClose }) {
                 placeholder="Confirm your password"
                 required={!isLogin}
               />
+            </div>
+          )}
+
+          {loginError && (
+            <div className="form-group error-message" style={{ color: '#dc3545', marginBottom: 10 }}>
+              {loginError}
             </div>
           )}
 
