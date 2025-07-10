@@ -24,6 +24,3 @@
 - [Akshaya](https://github.com/Akshaya033237)
 - [Vishnu Prabhakar](https://github.com/vishnu3821)
 
-### License
-MIT
- 
